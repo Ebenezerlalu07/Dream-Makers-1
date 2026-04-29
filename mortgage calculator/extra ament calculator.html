@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dream Makers Mortgage</title>
+    <link rel="icon" type="image/x-icon" href="/Assets/Logo only.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/Assets/Logo only.png" alt="Logo" class="rounded-circle">
+            </a>
+
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav navbar-custom text-center text-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Pages/Loan orintation.html">Loan Origination
+                            team</a></li>
+                    <li class="nav-item "><a class="nav-link active" href="/Pages/Mortgage Calculator.html">Mortgage
+                            Calculator</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Resources <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu text-start" aria-labelledby="resourcesDropdown">
+                            <li><a class="dropdown-item" href="/Resource/loanprograms.html">Loan Programs</a></li>
+                            <li><a class="dropdown-item" href="/Resource/loan process.html">Loan Process</a></li>
+                            <li><a class="dropdown-item" href="/Resource/Mortgage Basics.html">Mortgage Basics</a></li>
+                            <li><a class="dropdown-item" href="/Resource/Online Forms.html">Online Forms</a></li>
+                            <li><a class="dropdown-item" href="/Resource/faq.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/Pages/about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Pages/blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Pages/contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <a href="/Pages/Loan orintation.html" class="btn btn-apply d-none d-lg-block ms-3">Apply Now</a>
+        </div>
+    </nav>
+
+
+    <!-- banner -->
+    <section class="position-relative text-white"
+        style="background: url('/Assets/Mortgage\ Calculator.jpg') center/cover no-repeat; min-height: 60vh;">
+        <!-- Overlay -->
+        <div class="position-absolute top-0 start-0 w-100 h-100"></div>
+
+        <!-- Text aligned at bottom -->
+        <div class="container position-absolute bottom-0 start-0 end-0 pb-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-8 col-12">
+                    <h2 class="fw-bold mb-3">Extra Payment Calculator</h2>
+                </div>
+            </div>
+        </div>
+    </section><br>
+
+    <div class="mb-4 text-center">
+        <h2 class="fw-bold"> <span class="lightfont">Extra </span>Payment Calculator</h2>
+        <!-- <p class="text-muted mx-auto" style="max-width: 700px;">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+        </p> -->
+    </div>
+
+
+
+
+    <section class="py-5">
+        <div class="container">
+            <div>
+                <div class="row">
+                    <div class="col">
+                        <div id="calculator" class="embed-responsive embed-responsive-4by3"></div>
+                    </div>
+                </div>
+                <script src="https://d1924qgkgo8yaa.cloudfront.net/calcjs/index.js" defer></script>
+                <script>
+                    document.addEventListener(`DOMContentLoaded`, function () {
+                        (window.lhpCalculator || { mount: () => new Promise.resolve({ on: () => { } }) }).mount(`calculator`, {
+                            page: `/payoff`,
+                            defaultOptions: "{}",
+                            calculatorDefaults: `[{"id":1,"user_id":813,"calculator":"fha","config_json":{"description":"Calculate your Monthly Payment - Select your loan type, use sliders to input loan parameters.  Share results.","refi_description":"Calculate your New Monthly Payment - Select your loan type, use sliders to input loan parameters.  Share results.","property_price":"325000","property_tax":"1.2","upfront_fee":"1.75","down_payment":"3.5","annual_insurance_rate":"0.55","min_down_payment":"0","mortgage_term":"30","est_front_ratio":"33","est_back_ratio":"56","interest_rate_15":"6","interest_rate_30":"6.5","enabled":"1","factors":[{"years":"15","loan_min":"0","loan_max":"726200","ltv_min":"0","ltv_max":"90","fico_min":"0","fico_max":"850","mi":".15"},{"years":"15","loan_min":"0","loan_max":"726200","ltv_min":"90.01","ltv_max":"100","fico_min":"0","fico_max":"850","mi":".40"},{"years":"15","loan_min":"726200","loan_max":"2000000","ltv_min":"0","ltv_max":"78","fico_min":"0","fico_max":"850","mi":".15"},{"years":"15","loan_min":"726200","loan_max":"2000000","ltv_min":"78.01","ltv_max":"90","fico_min":"0","fico_max":"850","mi":".40"},{"years":"15","loan_min":"726200","loan_max":"2000000","ltv_min":"90.01","ltv_max":"100","fico_min":"0","fico_max":"850","mi":".65"},{"years":"30","loan_min":"0","loan_max":"726200","ltv_min":"0","ltv_max":"95","fico_min":"0","fico_max":"850","mi":".50"},{"years":"30","loan_min":"0","loan_max":"726200","ltv_min":"95.01","ltv_max":"100","fico_min":"0","fico_max":"850","mi":".55"},{"years":"30","loan_min":"726200","loan_max":"2000000","ltv_min":"0","ltv_max":"95","fico_min":"0","fico_max":"850","mi":".70"},{"years":"30","loan_min":"726200","loan_max":"2000000","ltv_min":"95.01","ltv_max":"100","fico_min":"0","fico_max":"850","mi":".75"}]},"created_at":null,"updated_at":"2023-12-15T20:27:07.000000Z"},{"id":2,"user_id":813,"calculator":"va","config_json":{"description":"Calculate your Monthly Payment - Select your loan type, use sliders to input loan parameters.  Share results.","refi_description":"Calculate your New Monthly Payment - Select your loan type, use sliders to input loan parameters.  Share results.","property_price":"250000","property_tax":"1.2","mortgage_insurance":".35","down_payment":"0","annual_insurance_rate":"0.55","min_down_payment":"0","mortgage_term":"30","est_front_ratio":"50","est_back_ratio":"55","interest_rate_10":"5.2","interest_rate_15":"5","interest_rate_20":"6","interest_rate_30":"6","enabled":"1","Upfront1stActiveFeeNone":"2.15","Upfront1stActiveFee5percent":"1.50","Upfront1stActiveFee10percent":"1.25","UpfrontActiveFeeNone":"3.30","UpfrontActiveFee5percent":"1.50","UpfrontActiveFee10percent":"1.25","Upfront1stNotActiveFeeNone":"2.15","Upfront1stNotActiveFee5percent":"2.15","Upfront1stNotActiveFee10percent":"2.15","UpfrontNotActiveFeeNone":"3.30","UpfrontNotActiveFee5percent":"1.50","UpfrontNotActiveFee10percent":"1.25"},"created_at":null,"updated_at":"2023-05-18T20:57:08.000000Z"},{"id":3,"user_id":813,"calculator":"jumbo","config_json":{"description":"Calculate your Monthly Payment - Select your loan type, use sliders to input loan parameters.  Share results.","refi_description":"Calculate your New Monthly Payment - Select your loan type, use sliders to input loan parameters.  Share results.","property_price":"1500000","property_tax":"1.2","down_payment":"20","annual_insurance_rate":"0.55","min_down_payment":"0","mortgage_term":"30","est_front_ratio":"50","est_back_ratio":"50","interest_rate_10":"5.2","interest_rate_15":"5.00","interest_rate_20":"6","interest_rate_30":"6.5","enabled":"1"},"created_at":null,"updated_at":"2023-05-18T20:56:40.000000Z"},{"id":4,"user_id":813,"calculator":"conventional","config_json":{"description":"Calculate your Monthly Payment - Select your loan type, use sliders to input loan parameters.  Share results.","refi_description":"Calculate your New Monthly Payment - Select your loan type, use sliders to input loan parameters.  Share results.","property_price":"350000","property_tax":"1.2","down_payment":"3","annual_insurance_rate":"0.5","min_down_payment":"0","mortgage_term":"30","est_front_ratio_conforming":"32","est_back_ratio_conforming":"45","interest_rate_10":"5.0","interest_rate_15":"5.5","interest_rate_20":"6","interest_rate_30":"6.5","enabled":"1","factors":[{"years":"10","loan_min":null,"loan_max":null,"ltv_min":"80","ltv_max":"85","fico_min":"760","fico_max":"850","mi":"0.17"},{"years":"10","loan_min":null,"loan_max":null,"ltv_min":"80","ltv_max":"85","fico_min":"740","fico_max":"759","mi":"0.19"},{"years":"10","loan_min":null,"loan_max":null,"ltv_min":"80","ltv_max":"85","fico_min":"720","fico_max":"739","mi":"0.23"},{"years":"10","loan_min":null,"loan_max":null,"ltv_min":"80","ltv_max":"85","fico_min":"700","fico_max":"719","mi":"0.23"},{"years":"10","loan_min":null,"loan_max":null,"ltv_min":"80","ltv_max":"85","fico_min":"680","fico_max":"699","mi":"0.26"},{"years":"10","loan_min":null,"loan_max":null,"ltv_min":"80","ltv_max":"85","fico_min":"660","fico_max":"679","mi":"0.32"},{"years":"10","loan_min":null,"loan_max":null,"ltv_min":"80","ltv_max":"85","fico_min":"640","fico_max":"659","mi":"0.34"},{"years":"10","loan_min":null,"loan_max":null,"ltv_min":"80","ltv_max":"85","fico_min":"620","fico_max":"639","mi":"0.41"},{"years":"10","loan_min":null,"loan_max":null,"ltv_min":"80","ltv_max":"85","fico_min":"400","fico_max":"619","mi":"0.62"},{"years":"10","loan_min":null,"loan_max":null,"ltv_min":"85","ltv_max":"90","fico_min":"760","fico_max":"850","mi":"0.25"},{"years":"10","loan_min":null,"loan_max":null,"ltv_min":"85","ltv_max":"90","fico_min":"740","fico_max":"759","mi":"0.31"},{"years":"10","loan_min":null,"loan_max":null,"ltv_min":"85","ltv_max":"90","fico_min":"720","fico_max":"739","mi":"0.37"},{"years":"10","loan_min":null,"loan_max":null,"ltv_min":"85","ltv_max":"90","fico_min":"700","fico_max":"719","mi":"0.44"},{"years":"10","loan_min":null,"loan_max":null,"ltv_min":"85","ltv_max":"90","fico_min":"680","fico_max":"699","mi":"0.51"},{"years":"10","loan_min":null,"loan_max":null,"ltv_min":"85","ltv_max":"90","fico_min":"660","fico_max":"679","mi":"0.66"},{"years":"10","loan_min":null,"loan_max":null,"ltv_min":"85","ltv_max":"90","fico_min":"640","fico_max":"659","mi":"0.74"},{"years":"10","loan_min":null,"loan_max":null,"ltv_min":"85","ltv_max":"90","fico_min":"620","fico_max":"639","mi":"0.89"},{"years":"10","loan_min":null,"loan_max":null,"ltv_min":"85","ltv_max":"90","fico_min":"400","fico_max":"619","mi":"1.34"},{"years":"10","loan_min":null,"loan_max":null,"ltv_min":"90","ltv_max":"95","fico_min":"760","fico_max":"850","mi":"0.32"},{"years":"10","loan_min":null,"loan_max":null,"ltv_min":"90","ltv_max":"95","fico_min":"740","fico_max":"759","mi":"0.43"},{"years":"10","loan_min":null,"loan_max":null,"ltv_min":"90","ltv_max":"95","fico_min":"720","fico_max":"739","mi":"0.52"},{"years":"10","loan_min":null,"loan_max":null,"ltv_min":"90","ltv_max":"95","fico_min":"700","fico_max":"719","mi":"0.62"},{"years":"10","loan_min":null,"loan_max":null,"ltv_min":"90","ltv_max":"95","fico_min":"680","fico_max":"699","mi":"0.77"},{"years":"10","loan_min":null,"loan_max":null,"ltv_min":"90","ltv_max":"95","fico_min":"660","fico_max":"679","mi":"0.95"},{"years":"10","loan_min":null,"loan_max":null,"ltv_min":"90","ltv_max":"95","fico_min":"640","fico_max":"659","mi":"1.08"},{"years":"10","loan_min":null,"loan_max":null,"ltv_min":"90","ltv_max":"95","fico_min":"620","fico_max":"639","mi":"1.27"},{"years":"10","loan_min":null,"loan_max":null,"ltv_min":"90","ltv_max":"95","fico_min":"400","fico_max":"619","mi":"1.91"},{"years":"10","loan_min":null,"loan_max":null,"ltv_min":"95","ltv_max":"100","fico_min":"760","fico_max":"850","mi":"0.4"},{"years":"10","loan_min":null,"loan_max":null,"ltv_min":"95","ltv_max":"100","fico_min":"740","fico_max":"759","mi":"0.53"},{"years":"10","loan_min":null,"loan_max":null,"ltv_min":"95","ltv_max":"100","fico_min":"720","fico_max":"739","mi":"0.68"},{"years":"10","loan_min":null,"loan_max":null,"ltv_min":"95","ltv_max":"100","fico_min":"700","fico_max":"719","mi":"0.8"},{"years":"10","loan_min":null,"loan_max":null,"ltv_min":"95","ltv_max":"100","fico_min":"680","fico_max":"699","mi":"1.01"},{"years":"10","loan_min":null,"loan_max":null,"ltv_min":"95","ltv_max":"100","fico_min":"660","fico_max":"679","mi":"1.34"},{"years":"10","loan_min":null,"loan_max":null,"ltv_min":"95","ltv_max":"100","fico_min":"640","fico_max":"659","mi":"1.51"},{"years":"10","loan_min":null,"loan_max":null,"ltv_min":"95","ltv_max":"100","fico_min":"620","fico_max":"639","mi":"1.72"},{"years":"10","loan_min":null,"loan_max":null,"ltv_min":"95","ltv_max":"100","fico_min":"400","fico_max":"619","mi":"2.58"},{"years":"15","loan_min":null,"loan_max":null,"ltv_min":"80","ltv_max":"85","fico_min":"760","fico_max":"850","mi":"0.17"},{"years":"15","loan_min":null,"loan_max":null,"ltv_min":"80","ltv_max":"85","fico_min":"740","fico_max":"759","mi":"0.19"},{"years":"15","loan_min":null,"loan_max":null,"ltv_min":"80","ltv_max":"85","fico_min":"720","fico_max":"739","mi":"0.23"},{"years":"15","loan_min":null,"loan_max":null,"ltv_min":"80","ltv_max":"85","fico_min":"700","fico_max":"719","mi":"0.23"},{"years":"15","loan_min":null,"loan_max":null,"ltv_min":"80","ltv_max":"85","fico_min":"680","fico_max":"699","mi":"0.26"},{"years":"15","loan_min":null,"loan_max":null,"ltv_min":"80","ltv_max":"85","fico_min":"660","fico_max":"679","mi":"0.32"},{"years":"15","loan_min":null,"loan_max":null,"ltv_min":"80","ltv_max":"85","fico_min":"640","fico_max":"659","mi":"0.34"},{"years":"15","loan_min":null,"loan_max":null,"ltv_min":"80","ltv_max":"85","fico_min":"620","fico_max":"639","mi":"0.41"},{"years":"15","loan_min":null,"loan_max":null,"ltv_min":"80","ltv_max":"85","fico_min":"400","fico_max":"619","mi":"0.62"},{"years":"15","loan_min":null,"loan_max":null,"ltv_min":"85","ltv_max":"90","fico_min":"760","fico_max":"850","mi":"0.25"},{"years":"15","loan_min":null,"loan_max":null,"ltv_min":"85","ltv_max":"90","fico_min":"740","fico_max":"759","mi":"0.31"},{"years":"15","loan_min":null,"loan_max":null,"ltv_min":"85","ltv_max":"90","fico_min":"720","fico_max":"739","mi":"0.37"},{"years":"15","loan_min":null,"loan_max":null,"ltv_min":"85","ltv_max":"90","fico_min":"700","fico_max":"719","mi":"0.44"},{"years":"15","loan_min":null,"loan_max":null,"ltv_min":"85","ltv_max":"90","fico_min":"680","fico_max":"699","mi":"0.51"},{"years":"15","loan_min":null,"loan_max":null,"ltv_min":"85","ltv_max":"90","fico_min":"660","fico_max":"679","mi":"0.66"},{"years":"15","loan_min":null,"loan_max":null,"ltv_min":"85","ltv_max":"90","fico_min":"640","fico_max":"659","mi":"0.74"},{"years":"15","loan_min":null,"loan_max":null,"ltv_min":"85","ltv_max":"90","fico_min":"620","fico_max":"639","mi":"0.89"},{"years":"15","loan_min":null,"loan_max":null,"ltv_min":"85","ltv_max":"90","fico_min":"400","fico_max":"619","mi":"1.34"},{"years":"15","loan_min":null,"loan_max":null,"ltv_min":"90","ltv_max":"95","fico_min":"760","fico_max":"850","mi":"0.32"},{"years":"15","loan_min":null,"loan_max":null,"ltv_min":"90","ltv_max":"95","fico_min":"740","fico_max":"759","mi":"0.43"},{"years":"15","loan_min":null,"loan_max":null,"ltv_min":"90","ltv_max":"95","fico_min":"720","fico_max":"739","mi":"0.52"},{"years":"15","loan_min":null,"loan_max":null,"ltv_min":"90","ltv_max":"95","fico_min":"700","fico_max":"719","mi":"0.62"},{"years":"15","loan_min":null,"loan_max":null,"ltv_min":"90","ltv_max":"95","fico_min":"680","fico_max":"699","mi":"0.77"},{"years":"15","loan_min":null,"loan_max":null,"ltv_min":"90","ltv_max":"95","fico_min":"660","fico_max":"679","mi":"0.95"},{"years":"15","loan_min":null,"loan_max":null,"ltv_min":"90","ltv_max":"95","fico_min":"640","fico_max":"659","mi":"1.08"},{"years":"15","loan_min":null,"loan_max":null,"ltv_min":"90","ltv_max":"95","fico_min":"620","fico_max":"639","mi":"1.27"},{"years":"15","loan_min":null,"loan_max":null,"ltv_min":"90","ltv_max":"95","fico_min":"400","fico_max":"619","mi":"1.91"},{"years":"15","loan_min":null,"loan_max":null,"ltv_min":"95","ltv_max":"100","fico_min":"760","fico_max":"850","mi":"0.4"},{"years":"15","loan_min":null,"loan_max":null,"ltv_min":"95","ltv_max":"100","fico_min":"740","fico_max":"759","mi":"0.53"},{"years":"15","loan_min":null,"loan_max":null,"ltv_min":"95","ltv_max":"100","fico_min":"720","fico_max":"739","mi":"0.68"},{"years":"15","loan_min":null,"loan_max":null,"ltv_min":"95","ltv_max":"100","fico_min":"700","fico_max":"719","mi":"0.8"},{"years":"15","loan_min":null,"loan_max":null,"ltv_min":"95","ltv_max":"100","fico_min":"680","fico_max":"699","mi":"1.01"},{"years":"15","loan_min":null,"loan_max":null,"ltv_min":"95","ltv_max":"100","fico_min":"660","fico_max":"679","mi":"1.34"},{"years":"15","loan_min":null,"loan_max":null,"ltv_min":"95","ltv_max":"100","fico_min":"640","fico_max":"659","mi":"1.51"},{"years":"15","loan_min":null,"loan_max":null,"ltv_min":"95","ltv_max":"100","fico_min":"620","fico_max":"639","mi":"1.72"},{"years":"15","loan_min":null,"loan_max":null,"ltv_min":"95","ltv_max":"100","fico_min":"400","fico_max":"619","mi":"2.58"},{"years":"20","loan_min":null,"loan_max":null,"ltv_min":"80","ltv_max":"85","fico_min":"760","fico_max":"850","mi":"0.19"},{"years":"20","loan_min":null,"loan_max":null,"ltv_min":"80","ltv_max":"85","fico_min":"740","fico_max":"759","mi":"0.20"},{"years":"20","loan_min":null,"loan_max":null,"ltv_min":"80","ltv_max":"85","fico_min":"720","fico_max":"739","mi":"0.23"},{"years":"20","loan_min":null,"loan_max":null,"ltv_min":"80","ltv_max":"85","fico_min":"700","fico_max":"719","mi":"0.25"},{"years":"20","loan_min":null,"loan_max":null,"ltv_min":"80","ltv_max":"85","fico_min":"680","fico_max":"699","mi":"0.28"},{"years":"20","loan_min":null,"loan_max":null,"ltv_min":"80","ltv_max":"85","fico_min":"660","fico_max":"679","mi":"0.38"},{"years":"20","loan_min":null,"loan_max":null,"ltv_min":"80","ltv_max":"85","fico_min":"640","fico_max":"659","mi":"0.40"},{"years":"20","loan_min":null,"loan_max":null,"ltv_min":"80","ltv_max":"85","fico_min":"620","fico_max":"639","mi":"0.44"},{"years":"20","loan_min":null,"loan_max":null,"ltv_min":"80","ltv_max":"85","fico_min":"400","fico_max":"619","mi":"0.66"},{"years":"20","loan_min":null,"loan_max":null,"ltv_min":"85","ltv_max":"90","fico_min":"760","fico_max":"850","mi":"0.28"},{"years":"20","loan_min":null,"loan_max":null,"ltv_min":"85","ltv_max":"90","fico_min":"740","fico_max":"759","mi":"0.38"},{"years":"20","loan_min":null,"loan_max":null,"ltv_min":"85","ltv_max":"90","fico_min":"720","fico_max":"739","mi":"0.46"},{"years":"20","loan_min":null,"loan_max":null,"ltv_min":"85","ltv_max":"90","fico_min":"700","fico_max":"719","mi":"0.55"},{"years":"20","loan_min":null,"loan_max":null,"ltv_min":"85","ltv_max":"90","fico_min":"680","fico_max":"699","mi":"0.65"},{"years":"20","loan_min":null,"loan_max":null,"ltv_min":"85","ltv_max":"90","fico_min":"660","fico_max":"679","mi":"0.90"},{"years":"20","loan_min":null,"loan_max":null,"ltv_min":"85","ltv_max":"90","fico_min":"640","fico_max":"659","mi":"0.91"},{"years":"20","loan_min":null,"loan_max":null,"ltv_min":"85","ltv_max":"90","fico_min":"620","fico_max":"639","mi":"0.94"},{"years":"20","loan_min":null,"loan_max":null,"ltv_min":"85","ltv_max":"90","fico_min":"400","fico_max":"619","mi":"1.41"},{"years":"20","loan_min":null,"loan_max":null,"ltv_min":"90","ltv_max":"95","fico_min":"760","fico_max":"850","mi":"0.38"},{"years":"20","loan_min":null,"loan_max":null,"ltv_min":"90","ltv_max":"95","fico_min":"740","fico_max":"759","mi":"0.53"},{"years":"20","loan_min":null,"loan_max":null,"ltv_min":"90","ltv_max":"95","fico_min":"720","fico_max":"739","mi":"0.66"},{"years":"20","loan_min":null,"loan_max":null,"ltv_min":"90","ltv_max":"95","fico_min":"700","fico_max":"719","mi":"0.78"},{"years":"20","loan_min":null,"loan_max":null,"ltv_min":"90","ltv_max":"95","fico_min":"680","fico_max":"699","mi":"0.96"},{"years":"20","loan_min":null,"loan_max":null,"ltv_min":"90","ltv_max":"95","fico_min":"660","fico_max":"679","mi":"1.28"},{"years":"20","loan_min":null,"loan_max":null,"ltv_min":"90","ltv_max":"95","fico_min":"640","fico_max":"659","mi":"1.33"},{"years":"20","loan_min":null,"loan_max":null,"ltv_min":"90","ltv_max":"95","fico_min":"620","fico_max":"639","mi":"1.42"},{"years":"20","loan_min":null,"loan_max":null,"ltv_min":"90","ltv_max":"95","fico_min":"400","fico_max":"619","mi":"2.13"},{"years":"20","loan_min":null,"loan_max":null,"ltv_min":"95","ltv_max":"100","fico_min":"760","fico_max":"850","mi":"0.58"},{"years":"20","loan_min":null,"loan_max":null,"ltv_min":"95","ltv_max":"100","fico_min":"740","fico_max":"759","mi":"0.70"},{"years":"20","loan_min":null,"loan_max":null,"ltv_min":"95","ltv_max":"100","fico_min":"720","fico_max":"739","mi":"0.87"},{"years":"20","loan_min":null,"loan_max":null,"ltv_min":"95","ltv_max":"100","fico_min":"700","fico_max":"719","mi":"0.99"},{"years":"20","loan_min":null,"loan_max":null,"ltv_min":"95","ltv_max":"100","fico_min":"680","fico_max":"699","mi":"1.21"},{"years":"20","loan_min":null,"loan_max":null,"ltv_min":"95","ltv_max":"100","fico_min":"660","fico_max":"679","mi":"1.54"},{"years":"20","loan_min":null,"loan_max":null,"ltv_min":"95","ltv_max":"100","fico_min":"640","fico_max":"659","mi":"1.65"},{"years":"20","loan_min":null,"loan_max":null,"ltv_min":"95","ltv_max":"100","fico_min":"620","fico_max":"639","mi":"1.86"},{"years":"20","loan_min":null,"loan_max":null,"ltv_min":"95","ltv_max":"100","fico_min":"400","fico_max":"619","mi":"2.79"},{"years":"30","loan_min":null,"loan_max":null,"ltv_min":"80","ltv_max":"85","fico_min":"760","fico_max":"850","mi":"0.19"},{"years":"30","loan_min":null,"loan_max":null,"ltv_min":"80","ltv_max":"85","fico_min":"740","fico_max":"759","mi":"0.20"},{"years":"30","loan_min":null,"loan_max":null,"ltv_min":"80","ltv_max":"85","fico_min":"720","fico_max":"739","mi":"0.23"},{"years":"30","loan_min":null,"loan_max":null,"ltv_min":"80","ltv_max":"85","fico_min":"700","fico_max":"719","mi":"0.25"},{"years":"30","loan_min":null,"loan_max":null,"ltv_min":"80","ltv_max":"85","fico_min":"680","fico_max":"699","mi":"0.28"},{"years":"30","loan_min":null,"loan_max":null,"ltv_min":"80","ltv_max":"85","fico_min":"660","fico_max":"679","mi":"0.38"},{"years":"30","loan_min":null,"loan_max":null,"ltv_min":"80","ltv_max":"85","fico_min":"640","fico_max":"659","mi":"0.40"},{"years":"30","loan_min":null,"loan_max":null,"ltv_min":"80","ltv_max":"85","fico_min":"620","fico_max":"639","mi":"0.44"},{"years":"30","loan_min":null,"loan_max":null,"ltv_min":"80","ltv_max":"85","fico_min":"400","fico_max":"619","mi":"0.66"},{"years":"30","loan_min":null,"loan_max":null,"ltv_min":"85","ltv_max":"90","fico_min":"760","fico_max":"850","mi":"0.28"},{"years":"30","loan_min":null,"loan_max":null,"ltv_min":"85","ltv_max":"90","fico_min":"740","fico_max":"759","mi":"0.38"},{"years":"30","loan_min":null,"loan_max":null,"ltv_min":"85","ltv_max":"90","fico_min":"720","fico_max":"739","mi":"0.46"},{"years":"30","loan_min":null,"loan_max":null,"ltv_min":"85","ltv_max":"90","fico_min":"700","fico_max":"719","mi":"0.55"},{"years":"30","loan_min":null,"loan_max":null,"ltv_min":"85","ltv_max":"90","fico_min":"680","fico_max":"699","mi":"0.65"},{"years":"30","loan_min":null,"loan_max":null,"ltv_min":"85","ltv_max":"90","fico_min":"660","fico_max":"679","mi":"0.90"},{"years":"30","loan_min":null,"loan_max":null,"ltv_min":"85","ltv_max":"90","fico_min":"640","fico_max":"659","mi":"0.91"},{"years":"30","loan_min":null,"loan_max":null,"ltv_min":"85","ltv_max":"90","fico_min":"620","fico_max":"639","mi":"0.94"},{"years":"30","loan_min":null,"loan_max":null,"ltv_min":"85","ltv_max":"90","fico_min":"400","fico_max":"619","mi":"1.41"},{"years":"30","loan_min":null,"loan_max":null,"ltv_min":"90","ltv_max":"95","fico_min":"760","fico_max":"850","mi":"0.38"},{"years":"30","loan_min":null,"loan_max":null,"ltv_min":"90","ltv_max":"95","fico_min":"740","fico_max":"759","mi":"0.53"},{"years":"30","loan_min":null,"loan_max":null,"ltv_min":"90","ltv_max":"95","fico_min":"720","fico_max":"739","mi":"0.66"},{"years":"30","loan_min":null,"loan_max":null,"ltv_min":"90","ltv_max":"95","fico_min":"700","fico_max":"719","mi":"0.78"},{"years":"30","loan_min":null,"loan_max":null,"ltv_min":"90","ltv_max":"95","fico_min":"680","fico_max":"699","mi":"0.96"},{"years":"30","loan_min":null,"loan_max":null,"ltv_min":"90","ltv_max":"95","fico_min":"660","fico_max":"679","mi":"1.28"},{"years":"30","loan_min":null,"loan_max":null,"ltv_min":"90","ltv_max":"95","fico_min":"640","fico_max":"659","mi":"1.33"},{"years":"30","loan_min":null,"loan_max":null,"ltv_min":"90","ltv_max":"95","fico_min":"620","fico_max":"639","mi":"1.42"},{"years":"30","loan_min":null,"loan_max":null,"ltv_min":"90","ltv_max":"95","fico_min":"400","fico_max":"619","mi":"2.13"},{"years":"30","loan_min":null,"loan_max":null,"ltv_min":"95","ltv_max":"100","fico_min":"760","fico_max":"850","mi":"0.58"},{"years":"30","loan_min":null,"loan_max":null,"ltv_min":"95","ltv_max":"100","fico_min":"740","fico_max":"759","mi":"0.70"},{"years":"30","loan_min":null,"loan_max":null,"ltv_min":"95","ltv_max":"100","fico_min":"720","fico_max":"739","mi":"0.87"},{"years":"30","loan_min":null,"loan_max":null,"ltv_min":"95","ltv_max":"100","fico_min":"700","fico_max":"719","mi":"0.99"},{"years":"30","loan_min":null,"loan_max":null,"ltv_min":"95","ltv_max":"100","fico_min":"680","fico_max":"699","mi":"1.21"},{"years":"30","loan_min":null,"loan_max":null,"ltv_min":"95","ltv_max":"100","fico_min":"660","fico_max":"679","mi":"1.54"},{"years":"30","loan_min":null,"loan_max":null,"ltv_min":"95","ltv_max":"100","fico_min":"640","fico_max":"659","mi":"1.65"},{"years":"30","loan_min":null,"loan_max":null,"ltv_min":"95","ltv_max":"100","fico_min":"620","fico_max":"639","mi":"1.86"},{"years":"30","loan_min":null,"loan_max":null,"ltv_min":"95","ltv_max":"100","fico_min":"400","fico_max":"619","mi":"2.79"}]},"created_at":null,"updated_at":"2023-06-29T00:15:31.000000Z"},{"id":5,"user_id":813,"calculator":"affordability","config_json":{"description":"Calculate your Monthly Payment - Select your loan type, use sliders to input loan parameters.  Share results.","refi_description":"Calculate your New Monthly Payment - Select your loan type, use sliders to input loan parameters.  Share results.","enabled":"1","down_payment":"0","mortgage_term":"30","interest_rate_10":"5.2","interest_rate_15":"5.2","interest_rate_20":"6","interest_rate_30":"6","property_tax":"1.2","annual_insurance_rate":null,"income":"85000","factors":[{"ltv_min":"0","ltv_max":"80","fico_min":"0","fico_max":"850","mi":"0"},{"ltv_min":"95","ltv_max":"100","fico_min":"0","fico_max":"850","mi":"0.59"},{"ltv_min":"90","ltv_max":"95","fico_min":"760","fico_max":"850","mi":"0.59"},{"ltv_min":"90","ltv_max":"95","fico_min":"720","fico_max":"760","mi":"0.67"},{"ltv_min":"90","ltv_max":"95","fico_min":"680","fico_max":"720","mi":"0.94"},{"ltv_min":"90","ltv_max":"95","fico_min":"300","fico_max":"680","mi":"1.2"},{"ltv_min":"85","ltv_max":"90","fico_min":"760","fico_max":"850","mi":"0.44"},{"ltv_min":"85","ltv_max":"90","fico_min":"720","fico_max":"760","mi":"0.49"},{"ltv_min":"85","ltv_max":"90","fico_min":"680","fico_max":"720","mi":"0.62"},{"ltv_min":"85","ltv_max":"90","fico_min":"300","fico_max":"680","mi":"0.76"},{"ltv_min":"80","ltv_max":"85","fico_min":"760","fico_max":"850","mi":"0.28"},{"ltv_min":"80","ltv_max":"85","fico_min":"720","fico_max":"760","mi":"0.32"},{"ltv_min":"80","ltv_max":"85","fico_min":"680","fico_max":"720","mi":"0.38"},{"ltv_min":"80","ltv_max":"85","fico_min":"300","fico_max":"680","mi":"0.44"}]},"created_at":null,"updated_at":"2022-10-27T17:19:50.000000Z"},{"id":6,"user_id":813,"calculator":"rural","config_json":{"description":"Calculate your Monthly Payment - Select your loan type, use sliders to input loan parameters.  Share results.","refi_description":"Calculate your New Monthly Payment - Select your loan type, use sliders to input loan parameters.  Share results.","property_price":"250000","property_tax":"1.2","upfront_fee":"1","down_payment":"0","annual_insurance_rate":"0.55","min_down_payment":"0","mortgage_term":"30","est_front_ratio":"50","est_back_ratio":"55","interest_rate_10":"5.2","interest_rate_15":"5","interest_rate_20":"6","interest_rate_30":"6","enabled":"1","factors":[{"ltv_min":"0","ltv_max":"100","fico_min":"0","fico_max":"850","mi":"0.35"}]},"created_at":null,"updated_at":"2023-05-18T20:56:48.000000Z"},{"id":2191,"user_id":813,"calculator":"other","config_json":{"description":"Calculate your Monthly Payment - Select your loan type, use sliders to input loan parameters.  Share results.","refi_description":"Calculate your New Monthly Payment - Select your loan type, use sliders to input loan parameters.  Share results.","enabled":"1","property_price":"250000","down_payment":"3","min_down_payment":"3","mortgage_term":"30","interest_rate_10":"3.22","interest_rate_15":"3.49","interest_rate_20":"4.23","interest_rate_30":"4.00","property_tax":"1.2","hazard_insurance":"800","factors":[{"years":"10","ltv_min":"80","ltv_max":"85","fico_min":"760","fico_max":"850","mi":"0"},{"years":"10","ltv_min":"80","ltv_max":"85","fico_min":"720","fico_max":"759","mi":"0"},{"years":"10","ltv_min":"80","ltv_max":"85","fico_min":"680","fico_max":"719","mi":"0"},{"years":"10","ltv_min":"80","ltv_max":"85","fico_min":"300","fico_max":"679","mi":"0"},{"years":"10","ltv_min":"85","ltv_max":"90","fico_min":"760","fico_max":"850","mi":"0"},{"years":"10","ltv_min":"85","ltv_max":"90","fico_min":"720","fico_max":"759","mi":"0"},{"years":"10","ltv_min":"85","ltv_max":"90","fico_min":"680","fico_max":"719","mi":"0"},{"years":"10","ltv_min":"85","ltv_max":"90","fico_min":"300","fico_max":"679","mi":"0"},{"years":"10","ltv_min":"90","ltv_max":"95","fico_min":"760","fico_max":"850","mi":"0"},{"years":"10","ltv_min":"90","ltv_max":"95","fico_min":"720","fico_max":"759","mi":"0"},{"years":"10","ltv_min":"90","ltv_max":"95","fico_min":"680","fico_max":"719","mi":"0"},{"years":"10","ltv_min":"90","ltv_max":"95","fico_min":"300","fico_max":"679","mi":"0"},{"years":"15","ltv_min":"80","ltv_max":"85","fico_min":"760","fico_max":"850","mi":"0"},{"years":"15","ltv_min":"80","ltv_max":"85","fico_min":"720","fico_max":"759","mi":"0"},{"years":"15","ltv_min":"80","ltv_max":"85","fico_min":"680","fico_max":"719","mi":"0"},{"years":"15","ltv_min":"80","ltv_max":"85","fico_min":"300","fico_max":"679","mi":"0"},{"years":"15","ltv_min":"85","ltv_max":"90","fico_min":"760","fico_max":"850","mi":"0"},{"years":"15","ltv_min":"85","ltv_max":"90","fico_min":"720","fico_max":"759","mi":"0"},{"years":"15","ltv_min":"85","ltv_max":"90","fico_min":"680","fico_max":"719","mi":"0"},{"years":"15","ltv_min":"85","ltv_max":"90","fico_min":"300","fico_max":"679","mi":"0"},{"years":"15","ltv_min":"90","ltv_max":"95","fico_min":"760","fico_max":"850","mi":"0"},{"years":"15","ltv_min":"90","ltv_max":"95","fico_min":"720","fico_max":"759","mi":"0"},{"years":"15","ltv_min":"90","ltv_max":"95","fico_min":"680","fico_max":"719","mi":"0"},{"years":"15","ltv_min":"90","ltv_max":"95","fico_min":"300","fico_max":"679","mi":"0"},{"years":"15","ltv_min":"95","ltv_max":"97","fico_min":"760","fico_max":"850","mi":"0"},{"years":"15","ltv_min":"95","ltv_max":"97","fico_min":"720","fico_max":"759","mi":"0"},{"years":"15","ltv_min":"95","ltv_max":"97","fico_min":"680","fico_max":"719","mi":"0"},{"years":"15","ltv_min":"95","ltv_max":"97","fico_min":"300","fico_max":"679","mi":"0"},{"years":"20","ltv_min":"80","ltv_max":"85","fico_min":"760","fico_max":"850","mi":"0"},{"years":"20","ltv_min":"80","ltv_max":"85","fico_min":"720","fico_max":"759","mi":"0"},{"years":"20","ltv_min":"80","ltv_max":"85","fico_min":"680","fico_max":"719","mi":"0"},{"years":"20","ltv_min":"80","ltv_max":"85","fico_min":"300","fico_max":"679","mi":"0"},{"years":"20","ltv_min":"85","ltv_max":"90","fico_min":"760","fico_max":"850","mi":"0"},{"years":"20","ltv_min":"85","ltv_max":"90","fico_min":"720","fico_max":"759","mi":"0"},{"years":"20","ltv_min":"85","ltv_max":"90","fico_min":"680","fico_max":"719","mi":"0"},{"years":"20","ltv_min":"85","ltv_max":"90","fico_min":"300","fico_max":"679","mi":"0"},{"years":"20","ltv_min":"90","ltv_max":"95","fico_min":"760","fico_max":"850","mi":"0"},{"years":"20","ltv_min":"90","ltv_max":"95","fico_min":"720","fico_max":"759","mi":"0"},{"years":"20","ltv_min":"90","ltv_max":"95","fico_min":"680","fico_max":"719","mi":"0"},{"years":"20","ltv_min":"90","ltv_max":"95","fico_min":"300","fico_max":"679","mi":"0"},{"years":"20","ltv_min":"95","ltv_max":"97","fico_min":"760","fico_max":"850","mi":"0"},{"years":"20","ltv_min":"95","ltv_max":"97","fico_min":"720","fico_max":"759","mi":"0"},{"years":"20","ltv_min":"95","ltv_max":"97","fico_min":"680","fico_max":"719","mi":"0"},{"years":"20","ltv_min":"95","ltv_max":"97","fico_min":"300","fico_max":"679","mi":"0"},{"years":"30","ltv_min":"80","ltv_max":"85","fico_min":"760","fico_max":"850","mi":"0"},{"years":"30","ltv_min":"80","ltv_max":"85","fico_min":"720","fico_max":"759","mi":"0"},{"years":"30","ltv_min":"80","ltv_max":"85","fico_min":"680","fico_max":"719","mi":"0"},{"years":"30","ltv_min":"80","ltv_max":"85","fico_min":"300","fico_max":"679","mi":"0"},{"years":"30","ltv_min":"85","ltv_max":"90","fico_min":"760","fico_max":"850","mi":"0"},{"years":"30","ltv_min":"85","ltv_max":"90","fico_min":"720","fico_max":"759","mi":"0"},{"years":"30","ltv_min":"85","ltv_max":"90","fico_min":"680","fico_max":"719","mi":"0"},{"years":"30","ltv_min":"85","ltv_max":"90","fico_min":"300","fico_max":"679","mi":"0"},{"years":"30","ltv_min":"90","ltv_max":"95","fico_min":"760","fico_max":"850","mi":"0"},{"years":"30","ltv_min":"90","ltv_max":"95","fico_min":"720","fico_max":"759","mi":"0"},{"years":"30","ltv_min":"90","ltv_max":"95","fico_min":"680","fico_max":"719","mi":"0"},{"years":"30","ltv_min":"90","ltv_max":"95","fico_min":"300","fico_max":"679","mi":"0"},{"years":"30","ltv_min":"95","ltv_max":"97","fico_min":"760","fico_max":"850","mi":"0"},{"years":"30","ltv_min":"95","ltv_max":"97","fico_min":"720","fico_max":"759","mi":"0"},{"years":"30","ltv_min":"95","ltv_max":"97","fico_min":"680","fico_max":"719","mi":"0"},{"years":"30","ltv_min":"95","ltv_max":"97","fico_min":"300","fico_max":"679","mi":"0"}]},"created_at":null,"updated_at":null}]`,
+                            website_id: `6564e4eca1e5716e10069b43`,
+                            colors: { "primary": "#0209C9", "secondary": "#ED230D" },
+                            logo_url: `https://d3i17xsp2ml938.cloudfront.net/sso/o275DuovxGxqDABPCLDSpSE89PEskFwxJJ95Ns7H.png`,
+                        }).then(client => {
+                            client.on(`resized`, () => {
+                                let busEvent = JSON.parse(event.data.replace("/*framebus*/", ""));
+                                let container = document.getElementById(`calculator`);
+
+                                const heightChange = busEvent.eventData.height + 65;
+                                container.style.height = heightChange + `px`;
+                            })
+                        })
+                    });
+                </script>
+            </div>
+        </div>
+    </section>
+    <section class="is-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h5>Disclaimer</h5>
+                    <p>Information and interactive calculators are made available to you as self-help tools for your
+                        independent use and are not intended to provide investment advice. We cannot and do not
+                        guarantee their applicability or accuracy in regards to your individual circumstances. All
+                        examples are hypothetical and are for illustrative purposes. We encourage you to seek
+                        personalized advice from qualified professionals regarding all personal finance issues.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style>
+        .calculator-section {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+            background-color: #f8f9fa;
+            box-sizing: border-box;
+        }
+
+        .calculator-wrapper {
+            width: 100%;
+            max-width: 1500px;
+            min-height: 600px;
+            /* Minimum height to show calculator */
+            aspect-ratio: 16 / 10;
+            position: relative;
+            background-color: transparent;
+            /* no background */
+        }
+
+        .calculator-wrapper iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Mobile specific styles */
+        @media (max-width: 768px) {
+            .calculator-wrapper {
+                min-height: 1500px;
+                /* increase this if still cutting */
+                aspect-ratio: auto;
+                /* remove fixed ratio on mobile */
+            }
+        }
+    </style>
+
+
+
+
+
+    <!-- Footer Section -->
+    <footer class="text-white position-relative"
+        style="background:url('/Assets/Home-Footer.jpg') center/cover no-repeat;">
+
+        <div class="container d-flex flex-column justify-content-between" style="min-height:60vh;">
+
+            <!-- Top: Logo + Social Media -->
+            <div class="d-flex flex-wrap justify-content-between align-items-center pt-3">
+                <!-- Logo -->
+                <div class="mb-2 mb-md-0">
+                    <img src="/Assets/Logo only.png" alt="Logo" class="img-fluid" style="max-height:60px;">
+                </div>
+
+                <!-- Social Media -->
+                <div class="d-flex gap-3 fs-4">
+                    <a href="https://www.instagram.com/dreammakersmortgage/#" class="text-white"><i
+                            class="bi bi-instagram"></i></a>
+                    <a href="https://www.facebook.com/DreamMakersMortgage" class="text-white"><i
+                            class="bi bi-facebook"></i></a>
+                    <a href="https://x.com/dreammakersmtg" class="text-white"><i class="bi bi-twitter-x"></i></a>
+
+                </div>
+            </div>
+
+            <!-- Middle: Main Heading -->
+            <div class="text-center my-auto px-2">
+                <h3 class="footer-heading fw-light fw-md-normal">
+                    <span>Your Home Journey</span><br>
+                    <b>Starts Here !</b>
+                </h3>
+            </div>
+
+            <!-- Bottom: Navigation + Text -->
+            <div class="text-center mt-auto pb-3 px-2">
+                <!-- Navigation -->
+                <nav class="mb-3">
+                    <ul class="nav justify-content-center flex-wrap gap-2">
+                        <li class="nav-item"><a href="/index.html"
+                                class="nav-link text-white px-2 fs-6 fs-sm-6 fs-md-5">Home</a>
+                        </li>
+                        <li class="nav-item"><a href="/Pages/about.html"
+                                class="nav-link text-white px-2 fs-6 fs-sm-6 fs-md-5">About</a>
+                        </li>
+                        <li class="nav-item"><a href="/Pages/contact.html"
+                                class="nav-link text-white px-2 fs-6 fs-sm-6 fs-md-5">Contact</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-white px-2 fs-6 fs-sm-6 fs-md-5">Mortgage
+                                Calculator</a></li>
+                        <li class="nav-item"><a href="/Pages/blog.html"
+                                class="nav-link text-white px-2 fs-6 fs-sm-6 fs-md-5">Blog</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Description -->
+                <p class="small footertext mb-2">
+                    We are a trusted mortgage service provider dedicated to helping individuals and families achieve
+                    their homeownership dreams. <br>
+                    With cost-effective solutions, personalized guidance, and innovative approaches, we simplify the
+                    mortgage process and secure your financial future with confidence.
+                </p>
+
+                <!-- Copyright -->
+                <p class="small mb-0">&copy; Copyright Dream Makers Mortgage, LLC</p>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+    <!-- Footer Section -->
+    <footer class="bg-white text-dark pt-5 border-top footer-custom">
+        <div class="container">
+            <div class="row gy-4">
+
+                <!-- About Us -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h6 class="fw-bold mb-3">About Us</h6>
+                    <p class="small mb-2">
+                        We've been helping customers afford the home of their dreams for many years and we love what we
+                        do...
+                    </p>
+                    <p class="small mb-1">Company NMLS: 2244116</p>
+                    <p class="small mb-0">Personal NMLS: 1828636</p>
+                </div>
+
+                <!-- Contact Us -->
+                <div class="col-6 col-md-6 col-lg-3">
+                    <h6 class="fw-bold mb-3">Contact Us</h6>
+                    <p class="small mb-1">10707 Corporate Drive, Suite 100-A</p>
+                    <p class="small mb-1">Stafford, TX 77477</p>
+                    <p class="small mb-1">Phone: (832) 348-3711</p>
+                    <a href="mailto:info@dmmtg.com" class="small text-decoration-none">
+                        info@dmmtg.com
+                    </a>
+                </div>
+
+                <!-- Disclaimers -->
+                <div class="col-6 col-md-6 col-lg-3">
+                    <h6 class="fw-bold mb-3">Disclaimers</h6>
+                    <ul class="list-unstyled small mb-0">
+                        <li><a href="/Pages/legal.html" class="text-dark text-decoration-none">Legal</a></li>
+                        <li><a href="/Pages/privacy policy.html" class="text-dark text-decoration-none">Privacy
+                                Policy</a></li>
+                        <li><a href="/Pages/Accessibility.html" class="text-dark text-decoration-none">Accessibility
+                                Statement</a></li>
+                        <li><a href="/Pages/Site map.html" class="text-dark text-decoration-none">Site Map</a></li>
+                        <li><a href="https://www.nmlsconsumeraccess.org/" class="text-dark text-decoration-none">NMLS
+                                Consumer Access</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h6 class="fw-bold mb-3">Resources</h6>
+                    <ul class="list-unstyled small mb-0">
+                        <li><a href="/Resource/loanprograms.html" class="text-dark text-decoration-none">Loan
+                                Programs</a></li>
+                        <li><a href="/Resource/loan process.html" class="text-dark text-decoration-none">Loan
+                                Process</a></li>
+                        <li><a href="/Resource/Mortgage Basics.html" class="text-dark text-decoration-none">Mortgage
+                                Basics</a></li>
+                        <li><a href="/Resource/Online Forms.html" class="text-dark text-decoration-none">Online
+                                Forms</a></li>
+                        <li><a href="/Resource/faq.html" class="text-dark text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Full-Width Bottom Bar -->
+        <div class="border-top mt-4 pt-3 small w-100">
+            <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+
+                <!-- Left: Text + Image -->
+                <div class="ft-logo d-flex align-items-center gap-3 mb-2 mb-md-0">
+                    <p class="mb-0">All Rights Reserved</p>
+                    <img class="ft-logo" src="/Assets/ft-logo.png" alt="Badge">
+                </div>
+
+                <!-- Right: Link -->
+                <a class="Paragraph text-dark text-decoration-none" href="/Pages/Texas Consumer.html">
+                    <p class="mb-0">Texas Consumer Compliant Recovery Fund Notice</p>
+                </a>
+
+            </div>
+        </div><br>
+    </footer>
+
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <img src="/Assets/Logo only.png" alt="Loading...">
+    </div>
+
+    <style>
+        /* Fullscreen preloader */
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            /* you can change to dark (#000) or any color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            /* stay above everything */
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
+
+        /* Hide smoothly */
+        #preloader.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        /* Responsive image */
+        #preloader img {
+            max-width: 150px;
+            width: 30vw;
+            /* scales with screen */
+            height: auto;
+        }
+    </style>
+
+    <script>
+        // Hide loader when page fully loads
+        window.addEventListener("load", () => {
+            const preloader = document.getElementById("preloader");
+            preloader.classList.add("hidden");
+        });
+    </script>
+
+    <script>
+        // Scroll animation
+        document.addEventListener("scroll", function () {
+            document.querySelectorAll(".scroll-transition").forEach(el => {
+                let rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 100) {
+                    el.classList.add("active");
+                }
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const navbar = document.querySelector('.navbar');
+        const scrollToggle = () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        };
+        scrollToggle();
+        window.addEventListener('scroll', scrollToggle);
+    </script>
+</body>
+
+</html>

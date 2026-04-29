@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dream Makers Mortgage</title>
+    <link rel="icon" type="image/x-icon" href="/Assets/Logo only.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/Assets/Logo only.png" alt="Logo" class="rounded-circle">
+            </a>
+
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav navbar-custom text-center text-lg-center">
+                    <li class="nav-item"><a class="nav-link " href="/index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Pages/Loan orintation.html">Loan Origination
+                            team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Pages/Mortgage Calculator.html">Mortgage
+                            Calculator</a></li>
+                    <li class="nav-item  dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="resourcesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Resources <i class="fa-solid fa-chevron-down "></i>
+                        </a>
+                        <ul class="dropdown-menu text-start" aria-labelledby="resourcesDropdown">
+                            <li><a class="dropdown-item" href="/Resource/loanprograms.html">Loan Programs</a></li>
+                            <li><a class="dropdown-item" href="/Resource/loan process.html">Loan Process</a></li>
+                            <li><a class="dropdown-item" href="/Resource/Mortgage Basics.html">Mortgage Basics</a></li>
+                            <li><a class="dropdown-item" href="/Resource/Online Forms.html">Online Forms</a></li>
+                            <li><a class="dropdown-item" href="/Resource/faq.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/Pages/about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Pages/blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Pages/contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <a href="/Pages/Loan orintation.html" class="btn btn-apply d-none d-lg-block ms-3">Apply Now</a>
+        </div>
+    </nav>
+
+
+    <!-- Banner -->
+    <section class="position-relative text-white"
+        style="background: url('/Assets/Graduated\ Payment\ Mortgages.jpg') center/cover no-repeat; min-height: 60vh;">
+        <!-- Overlay -->
+        <div class="position-absolute top-0 start-0 w-100 h-100"></div>
+
+        <!-- Text aligned at bottom -->
+        <div class="container position-absolute bottom-0 start-0 end-0 pb-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-8 col-12">
+                    <h2 class="fw-bold mb-3">VA Home Loans</h2>
+                    <!-- <p class="mb-0">
+                        <span class="lightfont">
+                            10707 Corporate Drive Suite 100-AStafford, TX 77477Phone: (832) 348-3711Email:
+                            info@dmmtg.com</span>
+                    </p> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-4">
+        <div class="container">
+            <!-- Heading -->
+            <h3 class="fw-bold">
+                <span class="lightfont">VA Home </span><span class="">Loans</span>
+            </h3>
+
+            <!-- Paragraph 1 -->
+            <p class=" mt-3">
+                The VA Loan provides veterans with a federally guaranteed home loan which requires no down payment. This
+                program was designed to provide housing and assistance for veterans and their families.<br><br>
+
+                The Veterans Administration provides insurance to lenders in the case that you default on a loan.
+                Because the mortgage is guaranteed, lenders will offer a lower interest rate and terms than a
+                conventional home loan. VA home loans are available in all 50 states. A VA loan may also have reduced
+                closing costs and no prepayment penalties.<br><br>
+
+                Additionally there are services that may be offered to veterans in danger of defaulting on their loans.
+                VA home loans are available to military personal that have either served 181 days during peacetime, 90
+                days during war, or a spouse of serviceman either killed or missing in action.
+            </p>
+        </div>
+    </section>
+
+    <section class="container Paragraph py-3">
+        <!-- Accordion -->
+        <div class="accordion" id="faqAccordion">
+
+            <!-- Item 1 -->
+            <div class="accordion-item border-0 border-bottom">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed fw-semibold bg-white shadow-none ps-0" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                        aria-controls="collapseOne">
+                        What is an VA Loan?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body ps-0">
+                        The Veteran Administration's Loan originated in 1944 through the Servicemen's Readjustment Act;
+                        also know as the GI Bill. It was signed into law by President Franklin D. Roosevelt and was
+                        designed to provide Veterans with a federally-guaranteed home loan with no down payment. VA
+                        loans are made by private lenders like banks, savings & loans, and mortgage companies to
+                        eligible Veterans for homes to live in. The lender is protected against loss if the loan
+                        defaults. Depending on the program option, the loan may or may not default.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="accordion-item border-0 border-bottom">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed fw-semibold bg-white shadow-none ps-0" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                        aria-controls="collapseTwo">
+                        Who is Eligible for a VA Loan?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body ps-0">
+                        Wartime/Conflict Veterans<br><br>
+                        <ul>
+                            <li>Veterans who were NOT Dishonorably Discharged, and served at least 90 days</li>
+                            <li> World War II – September 16, 1940 to July 25, 1947</li>
+                            <li>Korean Conflict – June 27, 1950 to January 31, 1955</li>
+                            <li> Vietnam Era – August 5, 1964 to May 7, 1975</li>
+                            <li> Persian Gulf War - Check with the Veterans Administration Office</li>
+                            <li> Afghanistan & Iraq – Check with the Veterans Administration Office</li>
+                            <li> Veterans Administration website <a href="https://www.va.gov/">www.va.gov</a></li>
+                        </ul>
+                        Peacetime Service <br><br>
+
+                        At least 181 days of continuous active duty with no dishonorable discharge. If you were
+                        discharged earlier due to a service-related disability you should contact your Regional VA
+                        Office for eligibility verification. <br><br>
+                        <ul>
+                            <li> July 26, 1947 to June 26, 1950</li>
+                            <li> February 1, 1955 to August 4, 1964, or May 8, 1975 to September 7, 1980 (Enlisted),
+                                or to October 16, 1981 (Officer)</li>
+                            <li>Enlisted Veterans whose service began after September 7, 1980, or officers who
+                                service
+                                began
+                                after October 16, 1981, must have completed 24-months of continuous active duty and
+                                been
+                                honorably discharged</li>
+                        </ul><br>
+                        Reserves and National Guard<br><br>
+                        <ul>
+                            <li> Certain U.S. Citizens who served in the Armed Forces of a government allied with
+                                the
+                                United
+                                States during World War II. </li>
+                            <li> Surviving spouse of an eligible Veteran who died resulting from service, and has
+                                not
+                                remarried. </li>
+                            <li>The spouse of an Armed Forces member who served Active Duty, and was listed as a POW
+                                or
+                                MIA
+                                for more than 90-days.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="accordion-item border-0 border-bottom">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed fw-semibold bg-white shadow-none ps-0" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                        aria-controls="collapseThree">
+                        What type of home can I buy with a VA loan?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body ps-0">
+                        A VA home loan must be used to finance your personal residence within the United States and
+                        its territories. You have choices for the type of home you purchase:<br><br>
+                        <ul>
+                            <li> Existing Single-Family Home</li>
+                            <li> Townhouse or Condominium in a VA-Approved Project</li>
+                            <li> New Construction Residence</li>
+                            <li> Manufactured Home or Lot </li>
+                            <li> Home Refinances and Certain Types of Home Improvements</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="accordion-item border-0 border-bottom">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed fw-semibold bg-white shadow-none ps-0" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                        aria-controls="collapseFour">
+                        What are the benefits of a VA Loan?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body ps-0">
+                        <ul>
+                            <li>100% Financing & No Down Payment Loans</li>
+                            <li> No Private Mortgage (PMI)</li>
+                            <li> No Penalties for Prepaying the Loan</li>
+                            <li> Competitive Interest Rates</li>
+                            <li>Qualification is Easier than a Conventional Loan</li>
+                            <li> Sellers Pay Some of the Closing Costs</li>
+                            <li> Can be combined with additional down payment assistance to reduce closing costs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="accordion-item border-0 border-bottom">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed fw-semibold bg-white shadow-none ps-0" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                        aria-controls="collapseFive">
+                        How do I apply for a VA guaranteed loan?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body ps-0">
+                        You can apply for a VA Loan with any mortgage lender that participates in the program. In
+                        addition to the application requirements from your lender, you will need the following at
+                        application time:<br><br>
+                        <ul>
+                            <li> Certificate of Eligibility from the Veterans Administration by submitting a completed
+                                <a href="https://www.vba.va.gov/pubs/forms/vba-26-1880-are.pdf"> VA Form 26-1880. </a>
+                            </li>
+                            <li> Proof of Military Service from a <a
+                                    href="https://www.benefits.va.gov/HOMELOANS/index.asp"> VA Eligibility Center </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="accordion-item border-0 border-bottom">
+                <h2 class="accordion-header" id="headingsix">
+                    <button class="accordion-button collapsed fw-semibold bg-white shadow-none ps-0" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="false"
+                        aria-controls="collapsesix">
+                        If I have already obtained one VA Loan, can I get another one?
+                    </button>
+                </h2>
+                <div id="collapsesix" class="accordion-collapse collapse" aria-labelledby="headingsix"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body ps-0">
+                        Yes, your eligibility is reusable depending on the circumstance. If you have paid-off your prior
+                        VA Loan, and disposed the property, you can have your eligibility restored again. Also, on a
+                        1-time basis, you may have your eligibility restored if your prior VA Loan has been paid-off,
+                        but you still own the property. Either way, the Veteran must send the Veterans Administration a
+                        completed VA Form 16-1880 to the VA Eligibility Center. To prevent delays in processing, it's
+                        advisable to include evidence that the prior loan has been fully paid, and if applicable, the
+                        property was disposed. A paid-in-full statement from the former lender or a copy of the HUD-1
+                        settlement statement must be submitted.<br><br>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 7 -->
+            <div class="accordion-item border-0 border-bottom">
+                <h2 class="accordion-header" id="headingseven">
+                    <button class="accordion-button collapsed fw-semibold bg-white shadow-none ps-0" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseseven" aria-expanded="false"
+                        aria-controls="collapseseven">
+                        What are the disadvantages of a VA Loan?
+                    </button>
+                </h2>
+                <div id="collapseseven" class="accordion-collapse collapse" aria-labelledby="headingseven"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body ps-0">
+                        <ul>
+                            <li>VA Loans made prior to March 1, 1988 can be assumed with no qualifying of the new
+                                buyer. If the buyer defaults the property the Veteran homeowner may be liable for the
+                                funds. </li>
+                            <li> Some sellers are hesitant to work with someone obtaining a VA Loan because it takes
+                                longer than a conventional loan to process. </li>
+                            <li>Sellers are often asked to pay a portion of closing costs and therefore less likely to
+                                negotiate the sales price of the home. </li>
+                        </ul><br><br>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+    </section>
+
+
+
+    <style>
+        .accordion-button {
+            background: #fff !important;
+            box-shadow: none !important;
+            padding-right: 2rem;
+        }
+
+        /* Remove Bootstrap’s default left padding */
+        .accordion-button,
+        .accordion-body {
+            padding-left: 0 !important;
+        }
+
+        /* Replace default arrow with + and × */
+        .accordion-button::after {
+            content: "+";
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #274193;
+            background-image: none !important;
+            transform: none !important;
+        }
+
+        .accordion-button:not(.collapsed)::after {
+            content: "×";
+            font-size: 1.5rem;
+            color: #274193;
+        }
+    </style>
+
+
+
+
+
+    <!-- Get a Quick Quote -->
+    <section class="container my-5">
+        <div class="row g-4 align-items-center">
+            <!-- Form Section -->
+            <div class="col-lg-9">
+                <h3 class="fw-bold mb-4">
+                    <span class="lightfont">Get a</span>
+                    <span class="text-dark">Quick Quote</span>
+                </h3>
+
+                <form id="gmailForm">
+                    <div class="row g-3">
+                        <!-- First & Last Name -->
+                        <div class="col-md-6">
+                            <label class="form-label">First Name<span class="text-danger">*</span></label>
+                            <input type="text" class="form-control bg-light border-0" name="firstName"
+                                placeholder="Enter your first name" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Last Name<span class="text-danger">*</span></label>
+                            <input type="text" class="form-control bg-light border-0" name="lastName"
+                                placeholder="Enter your last name" required>
+                        </div>
+
+                        <!-- Email & Phone -->
+                        <div class="col-md-6">
+                            <label class="form-label">Email<span class="text-danger">*</span></label>
+                            <input type="email" class="form-control bg-light border-0" name="email"
+                                placeholder="Enter your email" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Home Phone<span class="text-danger">*</span></label>
+                            <input type="tel" class="form-control bg-light border-0" name="phone"
+                                placeholder="Enter your phone number" required>
+                        </div>
+
+                        <!-- Loan Amount & Property Value -->
+                        <div class="col-md-6">
+                            <label class="form-label">Loan Amount <span class="text-danger">*</span></label>
+                            <select class="form-select bg-light border-0" name="loanAmount" required>
+                                <option selected disabled>Select an option</option>
+
+                                <option value="Less than $75,000">Less than $75,000</option>
+                                <option value="$75,000 - $100,000">$75,000 - $100,000</option>
+                                <option value="$100,000 - $125,000">$100,000 - $125,000</option>
+                                <option value="$125,000 - $150,000">$125,000 - $150,000</option>
+                                <option value="$150,000 - $175,000">$150,000 - $175,000</option>
+                                <option value="$175,000 - $200,000">$175,000 - $200,000</option>
+                                <option value="$200,000 - $225,000">$200,000 - $225,000</option>
+                                <option value="$225,000 - $250,000">$225,000 - $250,000</option>
+                                <option value="$250,000 - $275,000">$250,000 - $275,000</option>
+                                <option value="$275,000 - $300,000">$275,000 - $300,000</option>
+                                <option value="$300,000 - $325,000">$300,000 - $325,000</option>
+                                <option value="$325,000 - $350,000">$325,000 - $350,000</option>
+                                <option value="$350,000 - $375,000">$350,000 - $375,000</option>
+                                <option value="$375,000 - $400,000">$375,000 - $400,000</option>
+                                <option value="$400,000 - $425,000">$400,000 - $425,000</option>
+                                <option value="$425,000 - $450,000">$425,000 - $450,000</option>
+                                <option value="$450,000 - $475,000">$450,000 - $475,000</option>
+                                <option value="$475,000 - $500,000">$475,000 - $500,000</option>
+                                <option value="$500,000 - $525,000">$500,000 - $525,000</option>
+                                <option value="$525,000 - $550,000">$525,000 - $550,000</option>
+                                <option value="$550,000 - $575,000">$550,000 - $575,000</option>
+                                <option value="$575,000 - $600,000">$575,000 - $600,000</option>
+                                <option value="$600,000 - $625,000">$600,000 - $625,000</option>
+                                <option value="$625,000 - $650,000">$625,000 - $650,000</option>
+                                <option value="$650,000 - $675,000">$650,000 - $675,000</option>
+                                <option value="$675,000 - $700,000">$675,000 - $700,000</option>
+                                <option value="$700,000 - $725,000">$700,000 - $725,000</option>
+                                <option value="$725,000 - $750,000">$725,000 - $750,000</option>
+                                <option value="$750,000 - $775,000">$750,000 - $775,000</option>
+                                <option value="$775,000 - $800,000">$775,000 - $800,000</option>
+                                <option value="$800,000 - $825,000">$800,000 - $825,000</option>
+                                <option value="$825,000 - $850,000">$825,000 - $850,000</option>
+                                <option value="$850,000 - $875,000">$850,000 - $875,000</option>
+                                <option value="$875,000 - $900,000">$875,000 - $900,000</option>
+                                <option value="$900,000 - $925,000">$900,000 - $925,000</option>
+                                <option value="$925,000 - $950,000">$925,000 - $950,000</option>
+                                <option value="$950,000 - $975,000">$950,000 - $975,000</option>
+                                <option value="$975,000 - $1,000,000">$975,000 - $1,000,000</option>
+                                <option value="$1,000,000 - $1,100,000">$1,000,000 - $1,100,000</option>
+                                <option value="$1,100,000 - $1,200,000">$1,100,000 - $1,200,000</option>
+                                <option value="$1,200,000 - $1,300,000">$1,200,000 - $1,300,000</option>
+                                <option value="$1,300,000 - $1,400,000">$1,300,000 - $1,400,000</option>
+                                <option value="$1,400,000 - $1,500,000">$1,400,000 - $1,500,000</option>
+                                <option value="$1,500,000 - $1,600,000">$1,500,000 - $1,600,000</option>
+                                <option value="$1,600,000 - $1,700,000">$1,600,000 - $1,700,000</option>
+                                <option value="$1,700,000 - $1,800,000">$1,700,000 - $1,800,000</option>
+                                <option value="$1,800,000 - $1,900,000">$1,800,000 - $1,900,000</option>
+                                <option value="$1,900,000 - $2,000,000">$1,900,000 - $2,000,000</option>
+                                <option value="$2,000,000+">$2,000,000+</option>
+
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Property Value<span class="text-danger">*</span></label>
+                            <select class="form-select bg-light border-0" name="propertyValue" required>
+                                <option selected disabled>Select an option</option>
+
+                                <option value="Less than $75,000">Less than $75,000</option>
+                                <option value="$75,000 - $100,000">$75,000 - $100,000</option>
+                                <option value="$100,000 - $125,000">$100,000 - $125,000</option>
+                                <option value="$125,000 - $150,000">$125,000 - $150,000</option>
+                                <option value="$150,000 - $175,000">$150,000 - $175,000</option>
+                                <option value="$175,000 - $200,000">$175,000 - $200,000</option>
+                                <option value="$200,000 - $225,000">$200,000 - $225,000</option>
+                                <option value="$225,000 - $250,000">$225,000 - $250,000</option>
+                                <option value="$250,000 - $275,000">$250,000 - $275,000</option>
+                                <option value="$275,000 - $300,000">$275,000 - $300,000</option>
+                                <option value="$300,000 - $325,000">$300,000 - $325,000</option>
+                                <option value="$325,000 - $350,000">$325,000 - $350,000</option>
+                                <option value="$350,000 - $375,000">$350,000 - $375,000</option>
+                                <option value="$375,000 - $400,000">$375,000 - $400,000</option>
+                                <option value="$400,000 - $425,000">$400,000 - $425,000</option>
+                                <option value="$425,000 - $450,000">$425,000 - $450,000</option>
+                                <option value="$450,000 - $475,000">$450,000 - $475,000</option>
+                                <option value="$475,000 - $500,000">$475,000 - $500,000</option>
+                                <option value="$500,000 - $525,000">$500,000 - $525,000</option>
+                                <option value="$525,000 - $550,000">$525,000 - $550,000</option>
+                                <option value="$550,000 - $575,000">$550,000 - $575,000</option>
+                                <option value="$575,000 - $600,000">$575,000 - $600,000</option>
+                                <option value="$600,000 - $625,000">$600,000 - $625,000</option>
+                                <option value="$625,000 - $650,000">$625,000 - $650,000</option>
+                                <option value="$650,000 - $675,000">$650,000 - $675,000</option>
+                                <option value="$675,000 - $700,000">$675,000 - $700,000</option>
+                                <option value="$700,000 - $725,000">$700,000 - $725,000</option>
+                                <option value="$725,000 - $750,000">$725,000 - $750,000</option>
+                                <option value="$750,000 - $775,000">$750,000 - $775,000</option>
+                                <option value="$775,000 - $800,000">$775,000 - $800,000</option>
+                                <option value="$800,000 - $825,000">$800,000 - $825,000</option>
+                                <option value="$825,000 - $850,000">$825,000 - $850,000</option>
+                                <option value="$850,000 - $875,000">$850,000 - $875,000</option>
+                                <option value="$875,000 - $900,000">$875,000 - $900,000</option>
+                                <option value="$900,000 - $925,000">$900,000 - $925,000</option>
+                                <option value="$925,000 - $950,000">$925,000 - $950,000</option>
+                                <option value="$950,000 - $975,000">$950,000 - $975,000</option>
+                                <option value="$975,000 - $1,000,000">$975,000 - $1,000,000</option>
+                                <option value="$1,000,000 - $1,100,000">$1,000,000 - $1,100,000</option>
+                                <option value="$1,100,000 - $1,200,000">$1,100,000 - $1,200,000</option>
+                                <option value="$1,200,000 - $1,300,000">$1,200,000 - $1,300,000</option>
+                                <option value="$1,300,000 - $1,400,000">$1,300,000 - $1,400,000</option>
+                                <option value="$1,400,000 - $1,500,000">$1,400,000 - $1,500,000</option>
+                                <option value="$1,500,000 - $1,600,000">$1,500,000 - $1,600,000</option>
+                                <option value="$1,600,000 - $1,700,000">$1,600,000 - $1,700,000</option>
+                                <option value="$1,700,000 - $1,800,000">$1,700,000 - $1,800,000</option>
+                                <option value="$1,800,000 - $1,900,000">$1,800,000 - $1,900,000</option>
+                                <option value="$1,900,000 - $2,000,000">$1,900,000 - $2,000,000</option>
+                                <option value="$2,000,000+">$2,000,000+</option>
+                            </select>
+                        </div>
+
+                        <!-- Loan Type & Credit Score -->
+                        <div class="col-md-6">
+                            <label class="form-label">Loan Type<span class="text-danger">*</span></label>
+                            <select class="form-select bg-light border-0" name="loanType" required>
+                                <option selected disabled>Select an option</option>
+                                <option value="Purchase">Purchase</option>
+                                <option value="Refinance">Refinance</option>
+                                <option value="Refinance">Debt Consolidation</option>
+                                <option value="Refinance">Home Equity</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Credit Score<span class="text-danger">*</span></label>
+                            <select class="form-select bg-light border-0" name="creditScore" required>
+                                <option selected disabled>Select an option</option>
+                                <option value="Excellent (720+)">Excellent</option>
+                                <option value="Good (680-719)">Good</option>
+                                <option value="Fair (620-679)">Fair</option>
+                                <option value="Poor (below 620)">Poor</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Disclaimer Section -->
+                    <div class="row align-items-center mt-4">
+                        <!-- Disclaimer Text -->
+                        <div class="col-12 col-md-10">
+                            <small class="text-muted">
+                                By providing your phone number and/or email and clicking "Submit" you agree to our
+                                Terms of Service and Privacy Policy and consent to receive marketing communications
+                                from Dream Makers Mortgage, LLC via text, call, or email, including automated messages.
+                                To opt out, reply 'STOP' to any text. Message and data rates may apply.
+                            </small>
+                        </div>
+
+                        <!-- Toggle Switch -->
+                        <div class="col-12 col-md-2 text-md-end mt-3 mt-md-0">
+                            <div class="form-check form-switch m-0">
+                                <input class="form-check-input custom-toggle" type="checkbox" id="consentToggle"
+                                    checked>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="mt-4 d-flex flex-wrap gap-2 justify-content-start">
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn rounded-pill px-3  py-2 text-white"
+                            style="background-color:#ED230D; border:none;">
+                            Submit Now
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ms-2" width="18" height="18"
+                                viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <line x1="7" y1="17" x2="17" y2="7" />
+                                <polyline points="7 7 17 7 17 17" />
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Right Side Image -->
+            <div class="col-lg-3 d-none d-lg-block">
+                <img src="/Assets/About cover.jpg" alt="Form Image" class="img-fluid rounded-4">
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+    <script>
+        (function () {
+            emailjs.init("n67N2v-2MXzo-ld0s");
+        })();
+    </script>
+
+
+    <!-- Success Toast -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index:9999">
+        <div id="successToast" class="toast text-white border-0" style="background:#28a745;">
+            <div class="d-flex">
+                <div class="toast-body">
+                    Quote request sent successfully!
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Error Toast -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index:9999">
+        <div id="errorToast" class="toast text-white border-0" style="background:#dc3545;">
+            <div class="d-flex">
+                <div class="toast-body">
+                    Failed to send request. Please try again.
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        document.getElementById("gmailForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            emailjs.sendForm(
+                "service_dream_about",
+                "template_contact_",
+                this
+            ).then(
+                function () {
+
+                    document.getElementById("gmailForm").reset();
+
+                    var toast = new bootstrap.Toast(document.getElementById('successToast'));
+                    toast.show();
+
+                },
+                function (error) {
+
+                    var toast = new bootstrap.Toast(document.getElementById('errorToast'));
+                    toast.show();
+
+                    console.log(error);
+                }
+            );
+        });
+    </script>
+
+
+    <!-- Custom Toggle CSS -->
+    <style>
+        .form-check-input.custom-toggle {
+            width: 70px;
+            height: 35px;
+            background-color: #ccc;
+            border: none;
+            cursor: pointer;
+        }
+
+        .form-check-input.custom-toggle:checked {
+            background-color: #e6392e;
+        }
+
+        .form-check-input.custom-toggle:focus {
+            box-shadow: none;
+        }
+
+        @media (max-width: 576px) {
+            .form-check-input.custom-toggle {
+                width: 50px;
+                height: 25px;
+            }
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer Section -->
+    <footer class="text-white position-relative"
+        style="background:url('/Assets/Home-Footer.jpg') center/cover no-repeat;">
+
+        <div class="container d-flex flex-column justify-content-between" style="min-height:60vh;">
+
+            <!-- Top: Logo + Social Media -->
+            <div class="d-flex flex-wrap justify-content-between align-items-center pt-3">
+                <!-- Logo -->
+                <div class="mb-2 mb-md-0">
+                    <img src="/Assets/Logo only.png" alt="Logo" class="img-fluid" style="max-height:60px;">
+                </div>
+
+                <!-- Social Media -->
+                <div class="d-flex gap-3 fs-4">
+                    <a href="https://www.instagram.com/dreammakersmortgage/#" class="text-white"><i
+                            class="bi bi-instagram"></i></a>
+                    <a href="https://www.facebook.com/DreamMakersMortgage" class="text-white"><i
+                            class="bi bi-facebook"></i></a>
+                    <a href="https://x.com/dreammakersmtg" class="text-white"><i class="bi bi-twitter-x"></i></a>
+
+                </div>
+            </div>
+
+            <!-- Middle: Main Heading -->
+            <div class="text-center my-auto px-2">
+                <h3 class="footer-heading fw-light fw-md-normal">
+                    <span>Your Home Journey</span><br>
+                    <b>Starts Here !</b>
+                </h3>
+            </div>
+
+            <!-- Bottom: Navigation + Text -->
+            <div class="text-center mt-auto pb-3 px-2">
+                <!-- Navigation -->
+                <nav class="mb-3">
+                    <ul class="nav justify-content-center flex-wrap gap-2">
+                        <li class="nav-item"><a href="/index.html"
+                                class="nav-link text-white px-2 fs-6 fs-sm-6 fs-md-5">Home</a>
+                        </li>
+                        <li class="nav-item"><a href="/Pages/about.html"
+                                class="nav-link text-white px-2 fs-6 fs-sm-6 fs-md-5">About</a>
+                        </li>
+                        <li class="nav-item"><a href="/Pages/contact.html"
+                                class="nav-link text-white px-2 fs-6 fs-sm-6 fs-md-5">Contact</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-white px-2 fs-6 fs-sm-6 fs-md-5">Mortgage
+                                Calculator</a></li>
+                        <li class="nav-item"><a href="/Pages/blog.html"
+                                class="nav-link text-white px-2 fs-6 fs-sm-6 fs-md-5">Blog</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Description -->
+                <p class="small footertext mb-2">
+                    We are a trusted mortgage service provider dedicated to helping individuals and families achieve
+                    their homeownership dreams. <br>
+                    With cost-effective solutions, personalized guidance, and innovative approaches, we simplify the
+                    mortgage process and secure your financial future with confidence.
+                </p>
+
+                <!-- Copyright -->
+                <p class="small mb-0">&copy; Copyright Dream Makers Mortgage, LLC</p>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+    <!-- Footer Section -->
+    <footer class="bg-white text-dark pt-5 border-top footer-custom">
+        <div class="container">
+            <div class="row gy-4">
+
+                <!-- About Us -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h6 class="fw-bold mb-3">About Us</h6>
+                    <p class="small mb-2">
+                        We've been helping customers afford the home of their dreams for many years and we love what we
+                        do...
+                    </p>
+                    <p class="small mb-1">Company NMLS: 2244116</p>
+                    <p class="small mb-0">Personal NMLS: 1828636</p>
+                </div>
+
+                <!-- Contact Us -->
+                <div class="col-6 col-md-6 col-lg-3">
+                    <h6 class="fw-bold mb-3">Contact Us</h6>
+                    <p class="small mb-1">10707 Corporate Drive, Suite 100-A</p>
+                    <p class="small mb-1">Stafford, TX 77477</p>
+                    <p class="small mb-1">Phone: (832) 348-3711</p>
+                    <a href="mailto:info@dmmtg.com" class="small text-decoration-none">
+                        info@dmmtg.com
+                    </a>
+                </div>
+
+                <!-- Disclaimers -->
+                <div class="col-6 col-md-6 col-lg-3">
+                    <h6 class="fw-bold mb-3">Disclaimers</h6>
+                    <ul class="list-unstyled small mb-0">
+                        <li><a href="/Pages/legal.html" class="text-dark text-decoration-none">Legal</a></li>
+                        <li><a href="/Pages/privacy policy.html" class="text-dark text-decoration-none">Privacy
+                                Policy</a></li>
+                        <li><a href="/Pages/Accessibility.html" class="text-dark text-decoration-none">Accessibility
+                                Statement</a></li>
+                        <li><a href="/Pages/Site map.html" class="text-dark text-decoration-none">Site Map</a></li>
+                        <li><a href="https://www.nmlsconsumeraccess.org/" class="text-dark text-decoration-none">NMLS
+                                Consumer Access</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h6 class="fw-bold mb-3">Resources</h6>
+                    <ul class="list-unstyled small mb-0">
+                        <li><a href="/Resource/loanprograms.html" class="text-dark text-decoration-none">Loan
+                                Programs</a></li>
+                        <li><a href="/Resource/loan process.html" class="text-dark text-decoration-none">Loan
+                                Process</a></li>
+                        <li><a href="/Resource/Mortgage Basics.html" class="text-dark text-decoration-none">Mortgage
+                                Basics</a></li>
+                        <li><a href="/Resource/Online Forms.html" class="text-dark text-decoration-none">Online
+                                Forms</a></li>
+                        <li><a href="/Resource/faq.html" class="text-dark text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Full-Width Bottom Bar -->
+        <div class="border-top mt-4 pt-3 small w-100">
+            <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+
+                <!-- Left: Text + Image -->
+                <div class="ft-logo d-flex align-items-center gap-3 mb-2 mb-md-0">
+                    <p class="mb-0">All Rights Reserved</p>
+                    <img class="ft-logo" src="/Assets/ft-logo.png" alt="Badge">
+                </div>
+
+                <!-- Right: Link -->
+                <a class="Paragraph text-dark text-decoration-none" href="/Pages/Texas Consumer.html">
+                    <p class="mb-0">Texas Consumer Compliant Recovery Fund Notice</p>
+                </a>
+
+            </div>
+        </div><br>
+    </footer>
+
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <img src="/Assets/Logo only.png" alt="Loading...">
+    </div>
+
+    <style>
+        /* Fullscreen preloader */
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            /* you can change to dark (#000) or any color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            /* stay above everything */
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
+
+        /* Hide smoothly */
+        #preloader.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        /* Responsive image */
+        #preloader img {
+            max-width: 150px;
+            width: 30vw;
+            /* scales with screen */
+            height: auto;
+        }
+    </style>
+
+    <script>
+        // Hide loader when page fully loads
+        window.addEventListener("load", () => {
+            const preloader = document.getElementById("preloader");
+            preloader.classList.add("hidden");
+        });
+    </script>
+
+    <script>
+        // Scroll animation
+        document.addEventListener("scroll", function () {
+            document.querySelectorAll(".scroll-transition").forEach(el => {
+                let rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 100) {
+                    el.classList.add("active");
+                }
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const navbar = document.querySelector('.navbar');
+        const scrollToggle = () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        };
+        scrollToggle();
+        window.addEventListener('scroll', scrollToggle);
+    </script>
+</body>
+
+</html>
